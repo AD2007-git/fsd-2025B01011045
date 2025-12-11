@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #e8ecf1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 95vh;
+            margin: 0;
+        }
+
+        form {
+            width: 480px;
+        }
+
+        fieldset {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 25px 35px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        legend {
+            font-size: 1.6em;
+            font-weight: 600;
+            text-align: center;
+            color: #2d2d2d;
+        }
+
+        div {
+            margin-bottom: 14px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 9px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            font-size: 0.95em;
+            box-sizing: border-box;
+        }
+
+        .gender-group {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .gender-group label {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .button-container {
+            text-align: right;
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 9px 18px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95em;
+            transition: background-color 0.25s ease;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        input[type="reset"] {
+            background-color: #d6d8d9;
+            color: #333;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c4c6c7;
+        }
+
+        footer p {
+            text-align: center;
+            font-size: 0.85em;
+            color: #777;
+            margin-top: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="submit.html" method="post">
+        <fieldset>
+            <legend>Student Enrollment Form</legend>
+
+            <div>
+                <label for="fullName">Student Name:</label>
+                <input type="text" id="fullName" name="student_name" 
+                       placeholder="Enter your name here" required>
+            </div>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="student_email" 
+                       placeholder="example@email.com" required>
+            </div>
+
+            <div>
+                <label>Gender:</label>
+                <div class="gender-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="contact">Mobile Number:</label>
+                <input type="tel" id="contact" name="student_contact" 
+                       placeholder="Enter 10-digit number">
+            </div>
+
+            <div>
+                <label for="address">Residential Address:</label>
+                <textarea id="address" name="student_address" rows="4" 
+                          placeholder="Enter your full address"></textarea>
+            </div>
+
+            <div class="button-container">
+                <input type="reset" value="Reset Form">
+                <input type="submit" value="Submit Details">
+            </div>
+
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>© 2025 Student Enrollment Portal — All rights reserved</p>
+    </footer>
+
+</body>
+</html>
