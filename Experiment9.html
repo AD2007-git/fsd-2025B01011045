@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Product Grid</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f8;
+        margin: 0;
+        padding: 20px;
+    }
+
+    
+    .product-grid {
+        display: flex;
+        flex-wrap: wrap;                  
+        justify-content: center;
+        gap: 20px;
+    }
+
+    
+    .product-card {
+        background: #fff;
+        border-radius: 10px;
+        width: 300px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;           
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .product-card img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        height: 180px;
+    }
+
+    .product-card h3 {
+        margin: 10px 0 5px;
+        font-size: 20px;
+        color: #333;
+    }
+
+    .product-card p {
+        font-size: 16px;
+        color: #666;
+        text-align: center;
+    }
+
+    .price {
+        margin-top: 10px;
+        font-size: 18px;
+        color: #0077ff;
+        font-weight: bold;
+    }
+    .img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    
+    @media (max-width: 600px) {
+        .product-card {
+            width: 100%;                   
+        }
+    }
+
+   
+    @media (min-width: 601px) and (max-width: 900px) {
+        .product-card {
+            width: auto;
+        }
+    }
+
+    
+    @media (min-width: 901px) {
+        .product-card {
+            width: 50%;                   
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1>Responsive Product Grid</h1>
+
+<div class="product-grid">
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61la31UlZoL.jpg" alt="hair dryer">
+        <h3>hair dryer</h3>
+        <p>A great product for everyday use.</p>
+        <div class="price">$29.99</div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.pexels.com/photos/3945667/pexels-photo-3945667.jpeg?cs=srgb&dl=pexels-cottonbro-3945667.jpg&fm=jpg" alt="Product 2">
+        <h3>head phone </h3>
+        <p>High-quality and stylish best sound .</p>
+        <div class="price">$49.99</div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://www.filmyvastra.com/wp-content/uploads/2019/06/Black-Wide-tshirt-without-hanger-Recovered-scaled.jpg" alt="Product 3">
+        <h3>t shirt </h3>
+        <p>Perfect choice stylis for summer .</p>
+        <div class="price">$19.99</div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://rukminim2.flixcart.com/image/2400/2479/xif0q/shopsy-dustbin/j/t/6/dustbin-nalin-bros-original-imah2fe57fy7pdun.jpeg?q=60" alt="Product 4">
+        <h3>dustbin </h3>
+        <p>Reliable, durable, and modern.</p>
+        <div class="price">$10.99</div>
+    </div>
+</div>
+
+</body>
+</html>
