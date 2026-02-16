@@ -1,98 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f1f3f6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav{
+            background-color: #222;
+            color: #f1f3f6;
+            text-align: center; 
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+           
+        }
+        .card{
+            background-color: white;
+            width:250px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            padding: 10px;
+            
+        }
+        .card img{
+            width: 100%
+            border-radius: 8px;
+        }
+        .card h3{
+            width:100%
+            font-size: 8px;
+        }
+        .price{
+            font-size: 15px;
+            color: green;
+            font-weight: bold;
+        }
+        .old-price{
+            text-decoration: line-through;
+            color:gray;
+            margin-left: 5px;
+            font-size: 13px;
+         }
+         button{
+            width:100%;
+            padding: 10px;
+            background-color: #007bff;
+            color:white;
+            border:none;
+            border-radius: 5px;
+            curser: pointer;
+         }
+         button:hover {
+            background-color:#0056b3;
+         }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    background-color: #eef1f7;
-    font-family: Verdana, sans-serif;
-    padding: 25px;
-    color: #222;
-}
-
-/* Header */
-.header {
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-/* Wrapper */
-.wrapper {
-    width: 450px;
-    margin: auto;
-}
-
-/* Card */
-.card {
-    background: white;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-/* Image */
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    margin-bottom: 12px;
-}
-
-/* Title */
-.card h2 {
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-/* Description */
-.card p {
-    font-size: 14px;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-/* Price Section */
-.price-section {
-    margin-bottom: 15px;
-}
-
-.current-price {
-    font-weight: bold;
-    color: green;
-}
-
-.previous-price {
-    text-decoration: line-through;
-    color: gray;
-    margin-left: 10px;
-}
-
-/* Button */
-.button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Responsive */
-@media (max-width: 480px) {
-    .wrapper {
-        width: 100%;
-    }
-
-    .card img {
-        height: 150px;
-    }
-}
+    </style>
+</head>
+<body>
+    <nav>ShopEasy</nav>
+    <div class="container">
+        <div class="card">
+            <img src="https://imgs.search.brave.com/Wdbu14Vm0mUxlhnHy6dTg8uo8dsPo75RDgkg9w3vERk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb3R0/b25raW5nLmNvbS9j/ZG4vc2hvcC9jb2xs/ZWN0aW9ucy9BbGxf/U2hpcnRzLmpwZz92/PTE3MDc0MTExNjE" width="200">
+            <h3>Classic Cotton T-Shirts</h3>
+            <p>Soft,breathable, cotton,Regular fit, Available in multiple colors,</p>
+            <span class="price">$799</span>
+            <span class="old-price">$1199</span>
+            <br><br>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
